@@ -1,13 +1,71 @@
+@font-face {
+    font-family: Open_Regular;
+    src: url(assets/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:Open_Semibold;
+    src: url(assets/open-sans/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: Open_Bold;
+    src: url(assets/open-sans/OpenSans-Bold.ttf);
+}
+body {
+	margin:0px;
+	font-family:Open_Regular;
+	
+}
+
 #logo {
 	width:150px;
 }
 
 #splash {
 	background-image:url('assets/splash.jpg');
+	height:350px;
 }
 
+#splash_head {
+	font-family:Open_Semibold;
+	font-size: 3em;
+	color:white;
+}
 
 .container {
 	max-width:1000px;
-	margin:0 auto;
+	margin:10px auto;
+	padding:0px 10px;
+}
+
+.third {
+	box-sizing: border-box;
+	ms-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	width:33%;
+	display:inline-block;
+	margin: 0 auto;
+	text-align: center;
+	color:#999;
+	padding:15px;
+
+}
+.third img {
+	opacity:0.8;
+	margin-top:0px;
+
+}
+.third:hover img {
+	opacity:1;
+	transition:all 0.4s;
+	margin-top:-15px;
+
+}
+
+h1 {
+	font-family:Open_Semibold;
+	color:#666;
+	font-size: 1.5em;	
 }
